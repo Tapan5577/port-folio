@@ -51,7 +51,7 @@ nav{
     width: 100%;
     justify-content: space-between;
     min-height: 100vh;
-     background: url(Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.png) no-repeat;
+    background: url(Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.png);
      background-size: cover;
      background-position: center;
      display: flex;
