@@ -6,14 +6,16 @@
 }
 body {
   color: #ededed;
+  background: #131313;
 }
-header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 20px 10px;
-  background: transparent;
+ 
+  background: #112448;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +54,8 @@ nav {
   width: 100%;
   justify-content: space-between;
   min-height: 100vh;
-  background: url(Untitled\ design-2.png);
+
+  background: url(hello-2.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -68,6 +71,11 @@ nav {
   opacity: 0;
   animation: slideButtom 1s ease forwards;
   animation-delay: 0.7s;
+}
+.home-content h3:nth-of-type(2){
+  margin-bottom: 30px;
+  animation: slideTop 1s ease forwards;
+  animation-delay: .7s;
 }
 .home-content h3 span {
   color: rgb(255, 115, 0);
@@ -132,7 +140,114 @@ nav {
     0 0 50px rgb(255, 115, 0), 0 0 100px rgb(255, 115, 0),
     0 0 200px rgb(255, 115, 0);
 }
+.about{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   align-items: center;
+   gap: 1.5rem;
+}
+.about-img img{
+  padding-bottom: 20px;
+  max-width: 630px;
+  height: auto;
+  width: 100%;
+  border-radius: 8px;
 
+}
+.about-text h2{
+  font-size: 60px;
+}
+.about-text h2 span{
+  color: rgb(255, 115, 0);
+}
+.about-text h4{
+  font-size: 19px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.7;
+  margin: 15px 0 30px;
+}
+.about-text p{
+  color: aliceblue;
+  font-size: 10px;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+}
+.container{
+  padding: 90px;
+}
+.sub-title{
+     text-align: center;
+     font-size: 60px;
+     padding-bottom: 70px;
+}
+.sub-title span{
+  color: rgb(255, 115, 0);
+}
+.service-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.service-list div{
+  background-color: transparent;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 13px;
+  border-right: 10px;
+  border-radius: 20px;
+  transition: background 0.5s,transform 0.5s;
+  box-shadow: 1px 1px 20px #012290f7,
+  1px 1px 40px #0053b8
+
+}
+.service-list div i{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.service-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.service-list div a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.service{
+  color: aliceblue;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+}
+.read {
+  display: inline-block;
+  padding: 12px 28px;
+  background: rgb(255, 115, 0);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600px;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2s;
+  box-shadow: 0 0 5px rgb(255, 115, 0), 0 0 25px rgb(255, 115, 0);
+}
+.read:hover{
+  box-shadow: 0 0 5px rgb(255, 115, 0), 0 0 25px rgb(255, 115, 0),
+  0 0 50px rgb(255, 115, 0), 0 0 100px rgb(255, 115, 0),
+  0 0 200px rgb(255, 115, 0);
+}
+.service-list div:hover{
+  transform: translateY(-10px);
+}
 @keyframes slideRight {
   0% {
     transform: translatex(100px);
